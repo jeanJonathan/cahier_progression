@@ -39,9 +39,11 @@ dependencies:
   # Ajout du package pour l authentication
   firebase_auth: ^3.2.0
 
-  # add the packages pour la gestion d etat 
+  # Ajout du packages pour la gestion d etat
   flutter_riverpod: ^1.0.3
 
+  # Ajout du package pour la gestion des données
+  sqflite: ^2.0.0+3
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
