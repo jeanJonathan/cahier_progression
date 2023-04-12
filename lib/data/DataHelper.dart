@@ -38,59 +38,21 @@ class DataHelper { // Cette classe est conçue pour être un singleton
   // Creation des tables de la base de données
   Future<void> _onCreate(Database db, int version) async {
     await db.execute('''
-      CREATE TABLE sessions (
-        id INTEGER PRIMARY KEY,
-        title TEXT NOT NULL,
-        date TEXT NOT NULL,
-        notes TEXT NOT NULL,
-        image_path TEXT NOT NULL,
-        video_path TEXT NOT NULL,
-        advice TEXT NOT NULL
-      )
+    CREATE TABLE notes (
+      id INTEGER PRIMARY KEY,
+      chapter TEXT NOT NULL,
+      level TEXT NOT NULL,
+      note TEXT NOT NULL
+    )
     ''');
 
     await db.execute('''
-      CREATE TABLE notes (
-        id INTEGER PRIMARY KEY,
-        title TEXT NOT NULL,
-        content TEXT NOT NULL,
-        date TEXT NOT NULL,
-        session_id INTEGER NOT NULL,
-        FOREIGN KEY (session_id) REFERENCES sessions (id)
-      )
-    ''');
-
-    await db.execute('''
-      CREATE TABLE videos (
-        id INTEGER PRIMARY KEY,
-        title TEXT NOT NULL,
-        description TEXT NOT NULL,
-        date TEXT NOT NULL,
-        session_id INTEGER NOT NULL,
-        FOREIGN KEY (session_id) REFERENCES sessions (id)
-      )
-    ''');
-
-    await db.execute('''
-      CREATE TABLE images (
-        id INTEGER PRIMARY KEY,
-        title TEXT NOT NULL,
-        description TEXT NOT NULL,
-        date TEXT NOT NULL,
-        session_id INTEGER NOT NULL,
-        FOREIGN KEY (session_id) REFERENCES sessions (id)
-      )
-    ''');
-
-    await db.execute('''
-      CREATE TABLE advices (
-        id INTEGER PRIMARY KEY,
-        title TEXT NOT NULL,
-        content TEXT NOT NULL,
-        date TEXT NOT NULL,
-        session_id INTEGER NOT NULL,
-        FOREIGN KEY (session_id) REFERENCES sessions (id)
-      )
+    CREATE TABLE videos (
+      id INTEGER PRIMARY KEY,
+      sport TEXT NOT NULL,
+      level TEXT NOT NULL,
+      url TEXT NOT NULL
+    )
     ''');
   }
 }
