@@ -42,7 +42,7 @@ dependencies:
   # Ajout du packages pour la gestion d etat
   flutter_riverpod: ^1.0.3
 
-  # Ajout du package pour la gestion des données
+  # Ajout du package pour la gestion des données (pas besoin de creer une base de donnee mysql)
   sqflite: ^2.0.0+3
 
   #Ajout de la
