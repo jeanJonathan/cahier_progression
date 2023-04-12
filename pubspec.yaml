@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  path_provider: ^2.0.5
   # Ajout du package pour la  navigation et la gestion de la navigation et de l etat de l application
   flutter_bloc: ^7.3.1
   equatable: ^2.0.3
@@ -46,7 +46,7 @@ dependencies:
   sqflite: ^2.0.0+3
 
   #Ajout de la
-  sqlbrite: ^1.0.0
+  #sqlbrite: ^1.0.0
   #Ajour du package pour la gestion des transitions entre les différentes pages et écrans de l'application
   auto_route_generator: ^3.0.0-rc.2
 
