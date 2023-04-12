@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Home Page pour le cahier progression'),
+      home: const MyHomePage(title: 'Home Page pour le cahier de progression'),
     );
   }
 }
