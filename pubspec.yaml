@@ -45,8 +45,6 @@ dependencies:
   # Ajout du package pour la gestion des données (pas besoin de creer une base de donnee mysql)
   sqflite: ^2.0.0+3
 
-  #Ajout de la
-  #sqlbrite: ^1.0.0
   #Ajour du package pour la gestion des transitions entre les différentes pages et écrans de l'application
   auto_route_generator: ^3.0.0-rc.2
 
@@ -56,6 +54,11 @@ dependencies:
 
   # dépendance pour la connexion à une base de données MySQL
   mysql1: ^0.19.0
+
+  # Dépendances ajoutées
+  provider: ^6.0.0
+  http: ^0.13.4
+  shared_preferences: ^2.0.0
 
 dev_dependencies:
   flutter_test:
