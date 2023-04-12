@@ -19,34 +19,31 @@ samples, guidance on mobile development, and a full API reference.
 - android
 - ios
 - lib
-    - data : Dossier contenant les modèles de données et les repositories pour accéder aux données stockées
-        - models : contenant les classes de l'application
-            - session.dart
-            - note.dart
-            - video.dart
-            - image.dart
-            - advice.dart
-        - repositories : contenant les classes qui communiqueront avec les sources de données et effectueront les opérations CRUD.
-            - session_repository.dart
-            - note_repository.dart
-            - video_repository.dart
-            - image_repository.dart
-            - advice_repository.dart
-    - screens : contenant les écrans de l'application.
-        - home_screen.dart : l'écran d'accueil qui affichera les différentes fonctionnalités de l'application.
-        - session_screen.dart : l'écran qui permettra à l'utilisateur d'enregistrer une session d'entraînement.
-        - note_screen.dart : l'écran qui affichera la feuille de notes où les utilisateurs peuvent enregistrer leur progression pour chaque chapitre de leur niveau.
-        - video_screen.dart : l'écran qui affichera la bibliothèque vidéo pour chaque niveau.
-        - image_screen.dart : l'écran qui affichera la bibliothèque d'images pour chaque niveau.
-        - advice_screen.dart : l'écran qui affichera les conseils pour chaque niveau.
-        - graph_screen.dart : l'écran qui affichera les graphes et les tableaux de progression de l'utilisateur.
-    - widgets : dossier contenant les widgets utilisés dans les écrans de l'application.
-        - session_card.dart : le widget pour afficher les détails de la session d'entraînement.
-        - note_card.dart : le widget pour afficher chaque chapitre de la feuille de notes.
-        - video_card.dart : le widget pour afficher chaque vidéo.
-        - image_card.dart : le widget pour afficher chaque image.
-        - advice_card.dart : le widget pour afficher chaque conseil.
-    - main.dart : le fichier principal de l'application.
-    - constants.dart : le fichier contenant toutes les constantes utilisées dans l'application.
+  -main.dart : fichier principal de l'application.
+- models : contenant les classes de l'application
+    -Notes.dart
+    -User.dart
+- screens : contenant les écrans de l'application.
+    - Home_screen.dart : l'écran d'accueil qui affichera les différentes fonctionnalités de l'application.
+    - LoginScreen.dart : l'écran pour se connecter à l'application.
+    - NotesScreen.dart : l'écran pour afficher et modifier les notes de l'utilisateur.
+    - SignUpScreen.dart : l'écran pour s'inscrire à l'application.
+    - VideoPlayerScreen.dart : l'écran pour afficher une vidéo sélectionnée.
+- services: le dossier contenant les services pour interagir avec la base de données et récupérer les vidéos.
+  - AuthenticationService.dart : le service pour gérer la connexion et la déconnexion des utilisateurs.
+  - DatabaseService.dart : le service pour interagir avec la base de données.
+  - VideoService.dart : le service pour récupérer les vidéos.
+
+-utils: le dossier contenant des fichiers utilitaires pour votre application.
+    -Constants.dart : le fichier pour les constantes de votre application.
+-widgets/ : le dossier contenant les widgets réutilisables.
+    -NoteCard.dart : le widget pour afficher une note.
+    -VideoCard.dart : le widget pour afficher une vidéo.
+-main_components/ : le dossier contenant les fichiers de configuration générale de l'application.
+    -main_navigation.dart : le fichier pour la navigation entre les écrans de l'application.
+    -main_theme.dart : le fichier pour la personnalisation de l'aspect visuel de l'application.
+
 - test : ce dossier contiendra les tests unitaires et les tests d'intégration pour l'application.
 - pubspec.yaml : pour les dépendances et les métad
+
+
